@@ -45,11 +45,13 @@
         <artifactId>docker-maven-plugin</artifactId>
         <version>0.4.13</version>
         <configuration>
+          <!-- 远程需要保存的镜像名字-->
           <imageName>119.23.182.168:5000/member</imageName>
           <dockerDirectory>${project.basedir}</dockerDirectory>
           <skipDockerBuild>false</skipDockerBuild>
+          <!--本地docker服务器地址 -->
           <dockerHost>https://192.168.99.100:2376</dockerHost>
-          <dockerCertPath>C:\Users\tt2009100259\.docker\machine\machines\default</dockerCertPath>
+          <dockerCertPath>C:\Users\Administrator\.docker\machine\machines\default</dockerCertPath>
           <resources>
             <resource>
               <directory>${project.build.directory}</directory>
