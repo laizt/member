@@ -45,7 +45,7 @@
         <artifactId>docker-maven-plugin</artifactId>
         <version>0.4.13</version>
         <configuration>
-          <imageName>192.168.142.128:5000/member2</imageName>
+          <imageName>119.23.182.168:5000/member</imageName>
           <dockerDirectory>${project.basedir}</dockerDirectory>
           <skipDockerBuild>false</skipDockerBuild>
           <dockerHost>https://192.168.99.100:2376</dockerHost>
